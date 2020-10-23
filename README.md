@@ -1,12 +1,8 @@
-# Disentangling Timbre and Singing Style with Multi-singer Singing Synthesis System
+# Reverb Conversion of Mixed Vocal Tracks Using an End-to-end Convolutional Deep Neural Network
 
 
 ## ABSTRACT
-In this study, we define the identity of singer with two independent concepts -- timbre and singing style -- and propose a multi-singer singing synthesis system that can model them separately. To this end, we extend our single-singer model into multi-singer model in the following ways: First, we design a singer identity encoder that can effectively reflect the identity of a singer. Second, we use encoded singer identity to condition the two independent decoders that model timbre and singing style, respectively. Through a user study with the listening tests, we experimentally verify that the proposed framework is capable of generating a natural singing voice of high quality while independently controlling the timbre and singing style. Also, by using the method of changing singing styles while fixing the timbre, we suggest that our proposed network can produce a more expressive singing voice.
+Reverb plays a critical role in music production, where it provides listeners with spatial realization, timbre, and texture of the music. Yet, it is challenging to reproduce the musical reverb of a reference music track even by skilled engineers. In response, we propose an end-to-end system capable of switching the musical reverb factor of two different mixed vocal tracks. This method enables us to apply the reverb of the reference track to the source track to which the effect is desired. Further, our model can perform de-reverberation when the reference track is used as a dry vocal source. The proposed model is trained in combination with an adversarial objective, which makes it possible to handle high-resolution audio samples. The perceptual evaluation confirmed that the proposed model can convert the reverb factor with the preferred rate of 64.79%. To the best of our knowledge, this is the first attempt to apply deep neural networks to converting music reverb of vocal tracks.
 
-Project page : <https://juheo.github.io/DTS/>
-
-audio sample 1 in youtube : <https://www.youtube.com/watch?v=bzefkAGeAeo>
-
-audio sample 2 in youtube : <https://www.youtube.com/watch?v=oKjuoR6Y54g>
+Project page with samples : <https://dg22302.github.io/MusicalReverbConversion/>
 
