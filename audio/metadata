@@ -1,0 +1,16 @@
+Reverb Conversion
+#1 - delta=0%
+reverb 1: hrev_smoothvox_15%
+reverb 2: abbey_vocalplate_15%
+#2 - delta=20%
+reverb 1: abbey_vocalplate_5%
+reverb 2: chromavoxhall_25%
+#3 - delta=40%
+reverb 1: chromavoxhall_5%
+reverb 2: abbey_vocalplate_45%
+#4 - delta=60%
+reverb 1: hrev_smoothvox_5%
+reverb 2: chromavoxchamber_65%
+
+De-reverbertion
+
