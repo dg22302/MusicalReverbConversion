@@ -324,54 +324,121 @@
               </div>
 
               <div class="tab-pane fade" id="v-pills-7_5" role="tabpanel" aria-labelledby="v-pills-7_5-tab">
-                <p><div style="text-align:justify"> Singing voice produced through cross-generation. 'A-A' means the result of combining the timbre of A with the singing style of A, and 'A-B' means the result of combining the timbre of A with the singing style of B. </div></p>
-                <table class="table">
+                <p><div style="text-align:justify"> Results of De-reverberation from the proposed model. All samples were generated from our validation dataset. </div></p>
+                <style type="text/css">
+                  .tg  {border-collapse:collapse;border-color:#93a1a1;border-spacing:0;}
+                  .tg td{background-color:#fdf6e3;border-color:#93a1a1;border-style:solid;border-width:0px;color:#002b36;
+                    font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+                  .tg th{background-color:#657b83;border-color:#93a1a1;border-style:solid;border-width:0px;color:#fdf6e3;
+                    font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+                  .tg .tg-9wq8{border-color:inherit;text-align:center;vertical-align:middle}
+                  .tg .tg-nnwx{border-color:inherit;font-size:18px;font-weight:bold;text-align:center;vertical-align:middle}
+                  .tg .tg-vrnj{border-color:inherit;font-style:italic;text-align:center;vertical-align:middle}
+                  </style>
+                  <table class="tg">
+                  <thead>
+                    <tr>
+                      <th class="tg-9wq8">gamma</th>
+                      <th class="tg-nnwx">Reverb</th>
+                      <th class="tg-nnwx">Model Input</th>
+                      <th class="tg-nnwx">Model Output</th>
+                      <th class="tg-nnwx">Ground Truth</th>
+                    </tr>
+                  </thead>
                   <tbody>
                     <tr>
-                      <th>Song num.</th>
-                      <th>A-A</th>
-                      <th>B-B</th>
-                      <th>A-B</th>
-                      <th>B-A</th>
+                      <td class="tg-9wq8" rowspan="2">10%</td>
+                      <td class="tg-vrnj">Hrev Smoothvox</td>
+                      <td class="tg-9wq8"></td>
+                      <td class="tg-9wq8"></td>
+                      <td class="tg-9wq8"></td>
                     </tr>
                     <tr>
-                      <!-- <th rowspan="5" style="font-size:120%" class="align-middle">7.5dB</th> -->
-                      <td class="align-middle">1</td>
-                      <td><audio controls style="width:180px;"><source src="audio/cross_09_00.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/cross_09_04.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/cross_09_00_04.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/cross_09_04_00.wav" type="audio/mpeg"></audio></td>
+                      <td class="tg-vrnj">Abbey Vocalplate</td>
+                      <td class="tg-9wq8"></td>
+                      <td class="tg-9wq8"></td>
+                      <td class="tg-9wq8"></td>
                     </tr>
                     <tr>
-                      <td class="align-middle">2</td>
-                      <td><audio controls style="width:180px;"><source src="audio/cross_24_01.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/cross_24_04.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/cross_24_01_04.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/cross_24_04_01.wav" type="audio/mpeg"></audio></td>
+                      <td class="tg-9wq8" rowspan="2">20%</td>
+                      <td class="tg-vrnj">Chromavoxhall</td>
+                      <td class="tg-9wq8"></td>
+                      <td class="tg-9wq8"></td>
+                      <td class="tg-9wq8"></td>
                     </tr>
                     <tr>
-                      <td class="align-middle">3</td>
-                      <td><audio controls style="width:180px;"><source src="audio/cross_32_01.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/cross_32_05.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/cross_32_01_05.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/cross_32_05_01.wav" type="audio/mpeg"></audio></td>
+                      <td class="tg-vrnj"><span style="font-weight:400;font-style:italic">Chromavoxchamber</span></td>
+                      <td class="tg-9wq8"></td>
+                      <td class="tg-9wq8"></td>
+                      <td class="tg-9wq8"></td>
                     </tr>
                     <tr>
-                      <td class="align-middle">4</td>
-                      <td><audio controls style="width:180px;"><source src="audio/cross_47_00.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/cross_47_01.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/cross_47_00_01.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/cross_47_01_00.wav" type="audio/mpeg"></audio></td>
+                      <td class="tg-9wq8" rowspan="2">30%</td>
+                      <td class="tg-vrnj">Hrev Smoothvox</td>
+                      <td class="tg-9wq8"></td>
+                      <td class="tg-9wq8"></td>
+                      <td class="tg-9wq8"></td>
                     </tr>
                     <tr>
-                      <td class="align-middle">5</td>
-                      <td><audio controls style="width:180px;"><source src="audio/cross_27_04.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/cross_27_01.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/cross_27_04_01.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/cross_27_01_04.wav" type="audio/mpeg"></audio></td>
+                      <td class="tg-vrnj"><span style="font-weight:400;font-style:italic">Chromavoxhall</span></td>
+                      <td class="tg-9wq8"></td>
+                      <td class="tg-9wq8"></td>
+                      <td class="tg-9wq8"></td>
+                    </tr>
+                    <tr>
+                      <td class="tg-9wq8" rowspan="2">40%</td>
+                      <td class="tg-vrnj">Chromavoxchamber</td>
+                      <td class="tg-9wq8"></td>
+                      <td class="tg-9wq8"></td>
+                      <td class="tg-9wq8"></td>
+                    </tr>
+                    <tr>
+                      <td class="tg-vrnj"><span style="font-weight:400;font-style:italic">Abbey Vocalplate</span></td>
+                      <td class="tg-9wq8"></td>
+                      <td class="tg-9wq8"></td>
+                      <td class="tg-9wq8"></td>
+                    </tr>
+                    <tr>
+                      <td class="tg-9wq8" rowspan="2">50%</td>
+                      <td class="tg-vrnj">Abbey Vocalplate</td>
+                      <td class="tg-9wq8"></td>
+                      <td class="tg-9wq8"></td>
+                      <td class="tg-9wq8"></td>
+                    </tr>
+                    <tr>
+                      <td class="tg-vrnj"><span style="font-weight:400;font-style:italic">Chromavoxchamber</span></td>
+                      <td class="tg-9wq8"></td>
+                      <td class="tg-9wq8"></td>
+                      <td class="tg-9wq8"></td>
+                    </tr>
+                    <tr>
+                      <td class="tg-9wq8" rowspan="2">60%</td>
+                      <td class="tg-vrnj">Hrev Smoothvox</td>
+                      <td class="tg-9wq8"></td>
+                      <td class="tg-9wq8"></td>
+                      <td class="tg-9wq8"></td>
+                    </tr>
+                    <tr>
+                      <td class="tg-vrnj"><span style="font-weight:400;font-style:italic">Chromavoxhall</span></td>
+                      <td class="tg-9wq8"></td>
+                      <td class="tg-9wq8"></td>
+                      <td class="tg-9wq8"></td>
+                    </tr>
+                    <tr>
+                      <td class="tg-9wq8" rowspan="2">70%</td>
+                      <td class="tg-vrnj">Abbey Vocalplate</td>
+                      <td class="tg-9wq8"></td>
+                      <td class="tg-9wq8"></td>
+                      <td class="tg-9wq8"></td>
+                    </tr>
+                    <tr>
+                      <td class="tg-vrnj"><span style="font-weight:400;font-style:italic">Chromavoxchamber</span></td>
+                      <td class="tg-9wq8"></td>
+                      <td class="tg-9wq8"></td>
+                      <td class="tg-9wq8"></td>
                     </tr>
                   </tbody>
-                </table>
+                  </table>
               </div>
 
               <div class="tab-pane fade" id="v-pills-12_5" role="tabpanel" aria-labelledby="v-pills-12_5-tab">
