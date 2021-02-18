@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>MUSICAL REVERB CONVERSION OF VOCAL TRACKS USING DISJOINTING U-NET</title>
+    <title>MUSICAL REVERB CONVERSION OF MIXED VOCAL TRACKS</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -42,14 +42,14 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#abstract">ABSTRACT</a>
             </li>
-            <!-- <li class="nav-item">
+            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#proposed">Proposed System</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#result-objective">Objective Evaluation Result</a>
+              <a class="nav-link js-scroll-trigger" href="#result">Evaluation</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#result-subjective">Subjective Evaluation Result</a>
+            <!-- <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#result-qualitative">Qualitative Evaluation</a>
             </li> -->
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#samples">Audio Samples</a>
@@ -66,12 +66,11 @@
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
-          <!-- <div class="intro-lead-in">Disentangling Timbre and Singing Style</div> -->
           <div class="intro-heading">Reverb Conversion</div>
-          <!-- <div class="intro-lead-in">OF MIXED VOCAL TRACKS USING AN END-TO-END CONVOLUTIONAL DEEP NEURAL NETWORK</div> -->
-          <!-- <div class="intro-lead-in">of Mixed Vocal Tracks Using an End-to-end Convolutional Deep Neural Network</div> -->
           <div class="intro-lead-in">of Mixed Vocal Tracks Using</div>
           <div class="intro-lead-in">an End-to-end Convolutional Deep Neural Network</div>
+        
+          <p><div style="position:center;"> <br><br>Junghyun Koo, Seungryeol Paik, and Kyogu Lee<br>Music and Audio Research Group (MARG), Seould National University </div></p>
         </div>
       </div>
     </header>
@@ -83,7 +82,7 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">ABSTRACT</h2>
-            <p><div style="text-align:justify"> Reverb plays a critical role in music production, where it provides listeners with spatial realization, timbre, and texture of the music. Yet, it is challenging to reproduce the musical reverb of a reference music track even by skilled engineers. In response, we propose an end-to-end system capable of switching the musical reverb factor of two different mixed vocal tracks. This method enables us to apply the reverb of the reference track to the source track to which the effect is desired. Further, our model can perform de-reverberation when the reference track is used as a dry vocal source. The proposed model is trained in combination with an adversarial objective, which makes it possible to handle high-resolution audio samples. The perceptual evaluation confirmed that the proposed model can convert the reverb factor with the preferred rate of 64.79%. To the best of our knowledge, this is the first attempt to apply deep neural networks to converting music reverb of vocal tracks.</div></p>
+            <p><div style="text-align:justify"> Reverb plays a critical role in music production, where it provides listeners with spatial realization, timbre, and texture of the music. Yet, it is challenging to reproduce the musical reverb of a reference music track even by skilled engineers. In response, we propose an end-to-end system capable of switching the musical reverb factor of two different mixed vocal tracks. This method enables us to apply the reverb of the reference track to the source track to which the effect is desired. Further, our model can perform de-reverberation when the reference track is used as a dry vocal source. The proposed model is trained in combination with an adversarial objective, which makes it possible to handle high-resolution audio samples. The perceptual evaluation confirmed that the proposed model can convert the reverb factor with the preferred rate of 64.8%. To the best of our knowledge, this is the first attempt to apply deep neural networks to converting music reverb of vocal tracks.</div></p>
             <!-- <img src="img/idea.png" style="max-width: 80%; height: auto;" /> -->
           </div>
         </div>
@@ -92,62 +91,47 @@
     
     
     <!-- proposed method -->
-    <!--
     <section class="bg-light" id="proposed">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">PROPOSED SYSTEM</h2>
-            <p><div style="text-align:justify"> We propose a multi-singer SVS system that can model timbre and singing styles independently. 
-                We designed the network with <a href="https://github.com/juheo/Adversarially-Trained-End-to-end-Korean-Singing-Voice-Synthesis-System">[1]</a> as the baseline and extended the existing model to the multi-singer model by adding 1) singer identity encoder and 2) timbre/singing style conditioning method. </div></p>
             <img src="img/proposed.png" style="max-width: 100%; height: auto;" />
+            <p><div style="text-align:justify"> The proposed model is a modified version of the U-Net, which is trained to disentangle the reverb factor of the input and convert them into those of counterpart input. </div></p>
           </div>
         </div>
       </div>
     </section>
-    -->
+   
     
 
-
     <!-- Result -->
-    <!--
     <section id="result">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Listening Test Result</h2>
-            <h3 class="section-subheading text-muted">Qualitative evaluation results of our proposed system. (9-point scale)</h3>
-            <table class="table table-bordered">
-              <tr style="font-size:120%">
-                <th></th>
-                <th scope="col">Pronunciation accuracy</th>
-                <th scope="col">Sound Quality</th>
-                <th scope="col">Naturalness</th>
-              </tr>
-              <tr>
-                <th scope="row" style="font-size:130%">Proposed (w/o cross-generation)</th>
-                <td>7.30 &plusmn; 1.44</td>
-                <td>5.06 &plusmn; 1.44</td>
-                <td>5.64 &plusmn; 2.01</td>
-              </tr>
-              <tr>
-                <th scope="row" style="font-size:130%">Proposed (w/ cross-generation)</th>
-                <td>7.36 &plusmn; 1.39</td>
-                <td>5.19 &plusmn; 1.76</td>
-                <td>5.55 &plusmn; 2.02</td>
-              </tr>
-              <tr>
-                <th scope="row" style="font-size:130%">Ground truth</th>
-                <td>7.43 &plusmn; 1.50</td>
-                <td>6.40 &plusmn; 1.96</td>
-                <td>6.89 &plusmn; 1.89</td>
-              </tr>
-            </table>
+            <h2 class="section-heading text-uppercase">Evaluation</h2>
+            <p><div style="text-align:justify"> The <b>quantitative evaluation</b> includes two tasks;<br>
+              &emsp;&emsp;<i>Reverb Conversion</i>: interchanging reverb of two different inputs and<br>
+              </h3>
+            </div></p>
+            <img src="img/reverb_conversion.png" style="max-width: 720px; height: auto;" />
+            <br><br>
+            <p><div style="text-align:justify"> &emsp;&emsp;<i>De-reverberation</i>: eliminating reverb of the target input.</div></p>
+            <img src="img/dereverberation.png" style="max-width: 100%; height: auto;" />
+
+            <p><div style="text-align:justify"> <br><br><br> The <b>listening test</b><br>
+            <img src="img/qualitative.png" style="max-width: 460px; height: auto;"/>
+            <br><br>
+            <img src="img/DW.png" style="max-width: 100%; height: auto;" />
+            <br><br><br>
+            <img src="img/WD.png" style="max-width: 100%; height: auto;" />
+
           </div>
         </div>
       </div>
     </section>
-    -->
+   
     
 
     <!-- Samples -->
