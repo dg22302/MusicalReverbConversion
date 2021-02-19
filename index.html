@@ -32,7 +32,6 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <!--<a class="navbar-brand js-scroll-trigger" href="#page-top">DeepComplexUnet</a>-->
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <!-- Menu -->
           <i class="fas fa-bars"></i>
@@ -48,15 +47,9 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#result">Evaluation</a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#result-qualitative">Qualitative Evaluation</a>
-            </li> -->
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#samples">Audio Samples</a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#reference">References</a>
-            </li> -->
           </ul>
         </div>
       </div>
@@ -83,7 +76,6 @@
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">ABSTRACT</h2>
             <p><div style="text-align:justify"> Reverb plays a critical role in music production, where it provides listeners with spatial realization, timbre, and texture of the music. Yet, it is challenging to reproduce the musical reverb of a reference music track even by skilled engineers. In response, we propose an end-to-end system capable of switching the musical reverb factor of two different mixed vocal tracks. This method enables us to apply the reverb of the reference track to the source track to which the effect is desired. Further, our model can perform de-reverberation when the reference track is used as a dry vocal source. The proposed model is trained in combination with an adversarial objective, which makes it possible to handle high-resolution audio samples. The perceptual evaluation confirmed that the proposed model can convert the reverb factor with the preferred rate of 64.8%. To the best of our knowledge, this is the first attempt to apply deep neural networks to converting music reverb of vocal tracks.</div></p>
-            <!-- <img src="img/idea.png" style="max-width: 80%; height: auto;" /> -->
           </div>
         </div>
       </div>
@@ -307,52 +299,6 @@
                     </tr>
                   </tbody>
                   </table>
-                <!-- <table class="table">
-                  <tbody">
-                    <tr>
-                      <th>Song num.</th>
-                      <th>Singer 1</th>
-                      <th>Singer 2</th>
-                      <th>Singer 3</th>
-                      <th>Singer 4</th>
-                    </tr>
-                    <tr>
-                      <td class="align-middle">1</td>
-                      <td><audio controls style="width:180px;"><source src="audio/Multi_07_00.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Multi_07_01.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Multi_07_04.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Multi_07_05.wav" type="audio/mpeg"></audio></td>
-                    </tr>
-                    <tr>
-                      <td class="align-middle">2</td>
-                      <td><audio controls style="width:180px;"><source src="audio/Multi_06_00.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Multi_06_01.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Multi_06_04.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Multi_06_05.wav" type="audio/mpeg"></audio></td>
-                    </tr>
-                    <tr>
-                      <td class="align-middle">3</td>
-                      <td><audio controls style="width:180px;"><source src="audio/Multi_12_00.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Multi_12_01.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Multi_12_04.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Multi_12_05.wav" type="audio/mpeg"></audio></td>
-                    </tr>
-                    <tr>
-                      <td class="align-middle">4</td>
-                      <td><audio controls style="width:180px;"><source src="audio/Multi_25_00.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Multi_25_01.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Multi_25_04.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Multi_25_05.wav" type="audio/mpeg"></audio></td>
-                    </tr>
-                    <tr>
-                      <td class="align-middle">5</td>
-                      <td><audio controls style="width:180px;"><source src="audio/Multi_28_00.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Multi_28_01.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Multi_28_04.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Multi_28_05.wav" type="audio/mpeg"></audio></td>
-                    </tr>
-                  </tbody">
-                </table> -->
               </div>
 
               <div class="tab-pane fade center" id="v-pills-7_5" role="tabpanel" aria-labelledby="v-pills-7_5-tab">
@@ -612,36 +558,12 @@
                   </tbody>
                   </table>
               </div>
-
-              <!-- <p class="text-muted">The audio samples of other comparable algorithms are available in the links below.<br>
-              We encourage listeners to use headphone for more precise comparison with other algorithms.</p>
-              <p>
-                <a href="http://veu.talp.cat/segan/" style="color:blue">SEGAN</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="http://www.jordipons.me/apps/speech-denoising-wavenet/" style="color:blue">Wavenet Denoising</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="https://ccrma.stanford.edu/%7Efrancois/SpeechDenoisingWithDeepFeatureLosses/" style="color:blue">Deep Feature Loss</a> </p> -->
             </div>
             <div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Reference
-    <section id="reference">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <h2 class="section-heading text-uppercase text-center">References</h2>
-            <br>
-            <p class="text-muted">[1] Chiheb Trabelsi, Olexa Bilaniuk, Ying Zhang, Dmitriy Serdyuk, Sandeep Subramanian, Joao Felipe Santos, Soroush Mehri, Negar Rostamzadeh, Yoshua Bengio, and Christopher J Pal. Deep complex networks. arXiv preprint arXiv:1705.09792, 2017.</p>
-            <p class="text-muted">[2] Pascal Scalart et al. Speech enhancement based on a priori signal to noise estimation. In Acoustics, Speech, and Signal Processing, 1996. ICASSP-96. Conference Proceedings., 1996 IEEE International Conference on, volume 2, pp. 629–632. IEEE, 1996.</p>
-            <p class="text-muted">[3] Santiago Pascual, Antonio Bonafonte, and Joan Serra. Segan: Speech enhancement generative adversarial network. arXiv preprint arXiv:1703.09452, 2017.</p>
-            <p class="text-muted">[4] Dario Rethage, Jordi Pons, and Xavier Serra. A wavenet for speech denoising. arXiv preprint arXiv:1706.07162, 2017.</p>
-            <p class="text-muted">[5] Meet H Soni, Neil Shah, and Hemant A Patil. Time-frequency masking-based speech enhancement using generative adversarial network. In IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2018.</p>
-            <p class="text-muted">[6] Francois G Germain, Qifeng Chen, and Vladlen Koltun. Speech denoising with deep feature losses. arXiv preprint arXiv:1806.10522, 2018.</p>
-          </div>
-        </div>
-      </div>
-    </section> -->
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
